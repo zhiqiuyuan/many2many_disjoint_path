@@ -132,20 +132,6 @@ int main(int argc, char **argv)
     }
     else
     {
-        // M128iWrapper::init_masks();
-        // MultiVP ins(vps, problem_num, g, outpf);
-        // if (method == 1)
-        //     total_t =
-        //         ins.ms_uniform<M128iWrapper, M128iWrapper>(k);
-        // else if (method == 2)
-        //     total_t =
-        //         ins.ms_concentrate_uniform<M128iWrapper, M128iWrapper>(k);
-        // else if (method == 3)
-        //     total_t =
-        //         ins.ms<M128iWrapper, M128iWrapper>(k);
-        // else if (method == 4)
-        //     total_t =
-        //         ins.ms_concentrate<M128iWrapper, M128iWrapper>(k);
         CALL(if, batch_sz, 128, M128iWrapper)
         CALL(else if, batch_sz, 64, BuiltinUIntWrapper<uint64_t>)
         CALL(else if, batch_sz, 32, BuiltinUIntWrapper<uint32_t>)
