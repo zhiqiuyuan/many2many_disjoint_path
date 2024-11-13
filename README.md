@@ -16,11 +16,7 @@ Parameter:
 - `[-b]`: batch_size (optional, default to 128)
 
 Method number:
-- 0: maxflow
-- 1: ms_uniform
-- 2: ms_concentrate_uniform
-- 3: ms
-- 4: ms_concentrate
+todo
 
 For example:
 ```bash
